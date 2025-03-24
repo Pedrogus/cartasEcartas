@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://b81hmyou5776s"]
+
+[ext_resource type="Script" uid="uid://763ywxk2eq7n" path="res://scripts/card.gd" id="1_irop6"]
+[ext_resource type="Texture2D" uid="uid://q4dguqf0snil" path="res://assets/Diabo_sprite.png" id="2_irop6"]
+[ext_resource type="Texture2D" uid="uid://dwvee7uhepnbx" path="res://assets/Sprite-icon.png" id="2_md2gi"]
+[ext_resource type="FontFile" uid="uid://b634sxw4lq7lc" path="res://assets/joystix/joystix monospace.otf" id="3_irop6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4cc7"]
+font = ExtResource("3_irop6")
+
+[sub_resource type="LabelSettings" id="LabelSettings_jdt11"]
+font = ExtResource("3_irop6")
+
+[node name="Card" type="Node2D"]
+script = ExtResource("1_irop6")
+
+[node name="BaseCard" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.1805, 0.1875)
+
+[node name="CardImage" type="Node2D" parent="."]
+
+[node name="Image" type="Sprite2D" parent="CardImage"]
+scale = Vector2(0.0825535, 0.0863344)
+texture = ExtResource("2_irop6")
+
+[node name="CostDisplay" type="Node2D" parent="."]
+position = Vector2(-45, -82)
+
+[node name="ConstSprite" type="Sprite2D" parent="CostDisplay"]
+scale = Vector2(0.12875, 0.12875)
+texture = ExtResource("2_md2gi")
+
+[node name="ConstLbl" type="Label" parent="CostDisplay"]
+texture_filter = 1
+offset_left = -7.0
+offset_top = -10.0
+offset_right = 6.0
+offset_bottom = 10.0
+text = "0"
+label_settings = SubResource("LabelSettings_g4cc7")
+
+[node name="CardName" type="Node2D" parent="."]
+
+[node name="NameLbl" type="Label" parent="CardName"]
+visible = false
+texture_filter = 1
+offset_left = -47.0
+offset_top = 60.0
+offset_right = 48.0
+offset_bottom = 80.0
+text = "Nome"
+label_settings = SubResource("LabelSettings_jdt11")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
