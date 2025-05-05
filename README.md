@@ -98,25 +98,21 @@ XXI O Mundo Cornélios e filhotes
 		<th> Entrega </th>
 		<th> Status </th>
 	</tr>
-	
 	<tr>
 		<td> 1 </t>
 		<td> Sistema de cartas + interface básica </td>
 		<td> Atual </td>
 	</tr>
-	
 	<tr>
 		<td> 2 </td>
 		<td> Implementar rounds e combos </td>
 		<td> Futura </td>
 	</tr>
-	
 	<tr>
 		<td> 3 </td>
 		<td> Visual novel básica (diálogo + transição) </td>
 		<td> Futura </td>
 	</tr>
-	
 	<tr>
 		<td> 4 </td>
 		<td> Episódio 1 completo (cartas + VN) </td>
