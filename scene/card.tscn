@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://b81hmyou5776s"]
+[gd_scene load_steps=9 format=3 uid="uid://b81hmyou5776s"]
 
-[ext_resource type="Script" uid="uid://763ywxk2eq7n" path="res://scripts/card.gd" id="1_irop6"]
+[ext_resource type="Script" uid="uid://cfp1iicoqvo5h" path="res://scripts/Card.gd" id="1_irop6"]
 [ext_resource type="Texture2D" uid="uid://q4dguqf0snil" path="res://assets/Diabo_sprite.png" id="2_irop6"]
 [ext_resource type="Texture2D" uid="uid://dwvee7uhepnbx" path="res://assets/Sprite-icon.png" id="2_md2gi"]
+[ext_resource type="Texture2D" uid="uid://bebh2fkon2ssu" path="res://assets/Sprite-Card-export.png" id="3_g4cc7"]
 [ext_resource type="FontFile" uid="uid://b634sxw4lq7lc" path="res://assets/joystix/joystix monospace.otf" id="3_irop6"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_g4cc7"]
@@ -10,21 +11,30 @@ font = ExtResource("3_irop6")
 
 [sub_resource type="LabelSettings" id="LabelSettings_jdt11"]
 font = ExtResource("3_irop6")
+font_size = 12
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_irop6"]
+size = Vector2(118, 173)
 
 [node name="Card" type="Node2D"]
 script = ExtResource("1_irop6")
+const_image = ExtResource("2_irop6")
 
 [node name="BaseCard" type="Sprite2D" parent="."]
 visible = false
-scale = Vector2(0.1805, 0.1875)
+position = Vector2(2.125, 2.20741)
+scale = Vector2(0.17625, 0.183085)
+texture = ExtResource("3_g4cc7")
 
 [node name="CardImage" type="Node2D" parent="."]
 
 [node name="Image" type="Sprite2D" parent="CardImage"]
-scale = Vector2(0.0825535, 0.0863344)
+position = Vector2(2, 0.703213)
+scale = Vector2(0.0825535, 0.0846711)
 texture = ExtResource("2_irop6")
 
 [node name="CostDisplay" type="Node2D" parent="."]
+visible = false
 position = Vector2(-45, -82)
 
 [node name="ConstSprite" type="Sprite2D" parent="CostDisplay"]
@@ -37,20 +47,33 @@ offset_left = -7.0
 offset_top = -10.0
 offset_right = 6.0
 offset_bottom = 10.0
-text = "0"
+text = "1"
 label_settings = SubResource("LabelSettings_g4cc7")
+metadata/_edit_use_anchors_ = true
 
 [node name="CardName" type="Node2D" parent="."]
+visible = false
 
 [node name="NameLbl" type="Label" parent="CardName"]
-visible = false
 texture_filter = 1
-offset_left = -47.0
-offset_top = 60.0
-offset_right = 48.0
-offset_bottom = 80.0
+offset_left = -52.0
+offset_top = 48.0
+offset_right = 51.0
+offset_bottom = 73.0
+theme_override_fonts/font = ExtResource("3_irop6")
 text = "Nome"
 label_settings = SubResource("LabelSettings_jdt11")
 horizontal_alignment = 1
 vertical_alignment = 1
-autowrap_mode = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, 0.5)
+shape = SubResource("RectangleShape2D_irop6")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

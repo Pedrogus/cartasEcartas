@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf1dgi7wyw16b"]
+
+[ext_resource type="Script" uid="uid://ds808rlqb24o3" path="res://scripts/Hand.gd" id="1_7cxwv"]
+[ext_resource type="PackedScene" uid="uid://r560y443guah" path="res://scene/cards/kingCard.tscn" id="2_7cxwv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tcn6n"]
+radius = 1000.0
+
+[node name="Hand" type="Node2D"]
+script = ExtResource("1_7cxwv")
+
+[node name="TestCard" parent="." instance=ExtResource("2_7cxwv")]
+visible = false
+position = Vector2(0, -1000)
+
+[node name="DebugShape" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_tcn6n")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq8v7ikgh5qna"]
+
+[ext_resource type="PackedScene" uid="uid://b81hmyou5776s" path="res://scene/card.tscn" id="1_k3wvv"]
+[ext_resource type="Texture2D" uid="uid://bueeve7rv7oas" path="res://assets/Rainha_sprite.png" id="2_kshht"]
+
+[node name="QueenCard" type="Node2D"]
+
+[node name="Card" parent="." instance=ExtResource("1_k3wvv")]
+const_name = "Rainha"
+const_point = 5
+const_image = ExtResource("2_kshht")

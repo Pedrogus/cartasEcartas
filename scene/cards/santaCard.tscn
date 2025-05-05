@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvrh444jhh8ak"]
+
+[ext_resource type="PackedScene" uid="uid://b81hmyou5776s" path="res://scene/card.tscn" id="1_axaw1"]
+[ext_resource type="Texture2D" uid="uid://cu5tl4d1rg8hb" path="res://assets/Santa_sprite.png" id="2_np7ye"]
+
+[node name="SantaCard" type="Node2D"]
+
+[node name="Card" parent="." instance=ExtResource("1_axaw1")]
+const_name = "Santa"
+const_point = 2
+const_image = ExtResource("2_np7ye")
