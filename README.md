@@ -46,33 +46,75 @@ Estilo Visual: UI inspirada em Phoenix Wright com retratos dos personagens
 ### Cartas até agora e futuras Cartas
 
 0 O Louco - Netuno ✅
+<br>
 I   O Mago - Gael
+<br>
 II  A Sarcedotisa - Aisha ✅ 
+<br>
 III A Imperatriz - Hannai 
+<br>
 IV O Imperador - Faith 
+<br>
 V  O Papa - Aurélio 
+<br>
 VI Os Namorados - Lilith e Salamandra
+<br>
 VII O Carro - Carro da Mina 
+<br>
 VIII A Força - Hannai ✅
+<br>
 IX O Ermitão - Miyuki
+<br>
 X A Roda Da Fortuna - Ibtar ✅
+<br>
 XI A Justiça - Lucatiel 
+<br>
 XII O Pendurado  -  Andy
+<br>
 XIII A Morte - Rainha dos Corvos 
+<br>
 XIV A Temperança - Nébula 
+<br>
 XV O Diabo - Asmodeus ✅
+<br>
 XVI A Torre -  Cena triste de sessão 
+<br>
 XVII A Estrela - Petra 
+<br>
 XVIII A Lua - Kali ✅
+<br>
 XIX O Sol - Faith ✅
+<br>
 XX O Julgamento - Tribunal Sagrado 
+<br>
 XXI O Mundo Cornélios e filhotes
 
 
 ### 📅 8. Roadmap Inicial (Exemplo)
 
-Sistema de Cartas + interface básica [Atualmente]
-implementação de rounds e combos
-visual novel (dialogos + transições)
-Episodio 1 (Cartas + VN)
-Polimento + test de bugs
+<table>
+	<tr>
+		<th> Fase </th>
+		<th> Entrega <th>
+		<th> Status <th>
+	</tr>
+	<tr>
+		<td> 1 </t>
+		<td> Sistema de cartas + interface básica </td>
+		<td> Atual </td>
+	</tr>
+	<tr>
+		<td> 2 </td>
+		<td> Implementar rounds e combos </td>
+		<td> Futura </td>
+	</tr>
+	<tr>
+		<td> 3 </td>
+		<td> Visual novel básica (diálogo + transição) </td>
+		<td> Futura </td>
+	</tr>
+	<tr>
+		<td> 4 </td>
+		<td> Episódio 1 completo (cartas + VN) </td>
+		<td> Futura (Aniversario em Agosto) </td>
+	</tr>
