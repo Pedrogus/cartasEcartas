@@ -95,8 +95,8 @@ XXI O Mundo Cornélios e filhotes
 <table>
 	<tr>
 		<th> Fase </th>
-		<th> Entrega <th>
-		<th> Status <th>
+		<th> Entrega </th>
+		<th> Status </th>
 	</tr>
 	<tr>
 		<td> 1 </t>
